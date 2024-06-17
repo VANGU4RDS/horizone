@@ -26,9 +26,10 @@ export default function Page() {
                     password: password
                 });
                 if(session){
-                    router.push('/dashboard');
+                    router.push('/home');
                 };
                 if(error){
+                    console.log(error);
                     toast.error(error.message);
                 };
             };

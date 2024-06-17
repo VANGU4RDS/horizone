@@ -56,7 +56,7 @@ export default function Page() {
                         );
                         if(data){
                             await insertToDB();
-                            router.push('/dashboard');
+                            router.push('/home');
                         }
                         if(error){
                             toast.error('Please retry account creation');
@@ -78,7 +78,7 @@ export default function Page() {
         const {data:{session}} = await supabase.auth.getSession();
         console.log(session);
         if(session){
-            router.push('/dashboard');
+            router.push('/home');
         };
     };
     
