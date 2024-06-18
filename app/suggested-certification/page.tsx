@@ -18,7 +18,7 @@ export default function Page() {
                 <h1 className='text-xl font-bold'>Suggested Certifications</h1>
                 {certArray &&
                 certArray.map((element:any) => (
-                    <div className='w-full h-[10%] bg-gray-500 mt-2 text-white p-2 rounded-md'>
+                    <div key={element} className='w-full h-[10%] bg-gray-500 mt-2 text-white p-2 rounded-md'>
                         <h1 className='text-2xl'>{element}</h1>
                     </div>
                 ))}
