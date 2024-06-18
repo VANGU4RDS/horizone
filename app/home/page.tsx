@@ -11,7 +11,7 @@ export default function Page() {
     const [username, setUsername] = useState<string|null|undefined>(null);
 
     // Static certification array
-    const certArray:any[] = ['Engineer','Doctor','Forensic Science','Lawyer','Prosecutor','Detective','Dog Walker','Restaurant Crew', 'Janitor'];
+    const certArray:any[] = ['Engineer','Doctor','Forensic Scientist','Lawyer','Prosecutor','Detective','Dog Walker','Restaurant Crew', 'Janitor'];
 
     // Get user session
     const getUserSession = async() => {
@@ -55,6 +55,7 @@ export default function Page() {
                     </div>
                 </div>
                 <div className='flex flex-wrap justify-between h-[70%] p-5 w-full'>
+                    <h1 className='flex w-full text-3xl'>Certifications</h1>
                     {certArray && 
                     certArray.map((element:any) => (
                         <>
