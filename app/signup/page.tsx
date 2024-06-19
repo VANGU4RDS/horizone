@@ -56,7 +56,7 @@ export default function Page() {
                         );
                         if(data){
                             await insertToDB();
-                            router.push('/home');
+                            router.push('/assessment');
                         }
                         if(error){
                             toast.error('Please retry account creation');

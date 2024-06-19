@@ -15,6 +15,12 @@ const config: Config = {
       },
       colors: {
         'purpleSidebar-100': '#453FDD',
+        'cream-100': '#FFEAB2',
+        'cream-200': '#FFE399',
+        'cream-300': '#FFD973',
+        'cream-400': '#FFD157',
+        'cream-500': '#FFC731',
+        'cream-600': '#E5B024',
       }
     },
   },
